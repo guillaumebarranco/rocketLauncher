@@ -3,7 +3,7 @@
 <html>
 
     <head>
-        <title>Ocarina</title>
+        <title>Remote Control</title>
 
         <meta charset="UTF-8" />
         
@@ -15,20 +15,47 @@
                 width: 100px;
                 height: 100px;
             }
-            .my_button {
-                position: absolute;
-                top: 400px;
-            }
+            
             .blue {
                 left: 200px;
+                background-color: blue;
             }
 
             .green {
                 left: 400px;
+                background-color: green;
             }
 
             .red {
                 left: 600px;
+                background-color: red;
+            }
+
+            .purple {
+                top: 300px;
+                left: 200px;
+                background-color: purple;
+            }
+
+            .grey {
+                top: 300px;
+                left: 400px;
+                background-color: grey;
+            }
+
+            .yellow {
+                top: 300px;
+                left: 600px;
+                background-color: yellow;
+            }
+
+
+
+
+
+            .my_button {
+                position: absolute;
+                top: 200px;
             }
 
             .button_blue {
@@ -41,16 +68,17 @@
                 left: 250px;
             }
 
-            .blue {
-                background-color: blue;
+            .button_purple {
+                left: 50px;
+                top: 100px;
             }
-
-            .green {
-                background-color: green;
+            .button_grey {
+                left: 150px;
+                top: 100px;
             }
-
-            .red {
-                background-color: red;
+            .button_yellow {
+                left: 250px;
+                top: 100px;
             }
 
         </style>
@@ -59,6 +87,9 @@
 
     <body>
 
+        <div class="purple my_div"></div>
+        <div class="grey my_div"></div>
+        <div class="yellow my_div"></div>
         <div class="blue my_div"></div>
         <div class="green my_div"></div>
         <div class="red my_div"></div>
@@ -67,6 +98,10 @@
         <button class="button_blue my_button" data-color="blue">Blue</button>
         <button class="button_green my_button" data-color="green">Green</button>
         <button class="button_red my_button" data-color="red">Red</button>
+
+        <button class="button_purple my_button" data-color="purple">Purple</button>
+        <button class="button_grey my_button" data-color="grey">Grey</button>
+        <button class="button_yellow my_button" data-color="yellow">Yellow</button>
 
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="/socket.io/socket.io.js"></script>

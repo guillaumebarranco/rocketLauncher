@@ -22,7 +22,6 @@ var io = require('socket.io').listen(server);
 io.sockets.on('connection', function (socket) {
 
 	socket.on('buttonColor', function (color) {
-		console.log('buttonColor');
 	    socket.broadcast.emit('showColor', color);
 	});
 });
