@@ -14,15 +14,15 @@
                 background-color: black;
                 overflow: hidden;
             }
-            
+
             .my_button {
-                top: 200px;
                 padding: 30px;
                 width: 250px;
                 display: block;
                 box-sizing: border-box;
                 margin: 0 auto;
                 margin-top: 200px;
+                top: 200px;
             }
 
         </style>
@@ -30,7 +30,13 @@
     </head>
 
     <body>
-        <button class="my_button">Lancer une Roquette</button>
+
+        <aside id="library">
+            <img src="images/big-glow.png" id="big-glow" style="display:none;"/>
+            <img src="images/small-glow.png" id="small-glow" style="display:none;"/>
+        </aside>
+
+        <button class="my_button" data-color="yellow">Lancer une Roquette</button>
 
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="/socket.io/socket.io.js"></script>
@@ -55,6 +61,7 @@
 
                     $('.my_button').hide();
                 }
+
             });
 
         </script>
