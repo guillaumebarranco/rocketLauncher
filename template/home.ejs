@@ -15,31 +15,8 @@
                 overflow: hidden;
             }
             
-
             .my_button {
-                //position: absolute;
                 top: 200px;
-            }
-
-            .button_blue {
-                left: 50px;
-            }
-            .button_green {
-                left: 150px;
-            }
-            .button_red {
-                left: 250px;
-            }
-
-            .button_purple {
-                left: 50px;
-                top: 100px;
-            }
-            .button_grey {
-                left: 150px;
-                top: 100px;
-            }
-            .button_yellow {
                 padding: 30px;
                 width: 250px;
                 display: block;
@@ -53,21 +30,7 @@
     </head>
 
     <body>
-
-        <aside id="library">
-      <img src="images/big-glow.png" id="big-glow" style="display:none;"/>
-      <img src="images/small-glow.png" id="small-glow" style="display:none;"/>
-    </aside>
-
-        <!-- <button class="button_blue my_button" data-color="blue">Blue</button>
-        <button class="button_green my_button" data-color="green">Green</button>
-        <button class="button_red my_button" data-color="red">Red</button>
-
-        <button class="button_purple my_button" data-color="purple">Purple</button>
-        <button class="button_grey my_button" data-color="grey">Grey</button> -->
-
-
-        <button class="button_yellow my_button" data-color="yellow">Lancer une Roquette</button>
+        <button class="my_button">Lancer une Roquette</button>
 
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="/socket.io/socket.io.js"></script>
@@ -92,7 +55,6 @@
 
                     $('.my_button').hide();
                 }
-
             });
 
         </script>
